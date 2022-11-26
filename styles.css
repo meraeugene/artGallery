@@ -51,7 +51,7 @@ input:focus {
   outline: none;
 }
 
-img {
+.grid img {
   width: 100%;
   cursor: pointer;
   border: 10px solid #121212;
@@ -108,12 +108,8 @@ ul {
   font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
   font-weight: 400;
   font-family: "Gill Sans MT W01 Medium";
-}
-
-.info .artist {
-  font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
-  font-weight: bold;
-  font-family: "Recoleta W00 Medium";
+  text-align: initial;
+  line-height: 20px;
 }
 
 .info {
@@ -134,4 +130,9 @@ ul {
 .img-container:hover .info {
   opacity: 1;
   bottom: 10%;
+}
+
+span {
+  font-weight: bold;
+  font-family: "Recoleta W00 Medium";
 }

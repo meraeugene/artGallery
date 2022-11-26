@@ -7,9 +7,9 @@ const macyInstance = Macy({
   container: grid,
   margin: 15,
   breakAt: {
-    1600: 5,
-    1200: 4,
-    900: 3,
+    1600: 3,
+    1200: 3,
+    900: 2,
     600: 2,
     400: 1,
   },
@@ -35,6 +35,8 @@ const showImage = (array) => {
       title: paint.title,
       imageID: paint.image_id,
       artist: paint.artist_title,
+      place: paint.place_of_origin,
+      date: paint.date_start,
     };
   });
 
@@ -45,8 +47,10 @@ const showImage = (array) => {
         <div class="img-container">
           <img src="${paintImages}" alt="" />
         <div class="info">
-        <p class="title">${paint.title}</p>
-        <p class="artist">${paint.artist}</p>
+        <p class="title"><span>Artist:</span> ${paint.artist}</p>
+        <p class="title"><span>Title:</span> ${paint.title}</p>
+        <p class="title"><span>Place:</span> ${paint.place}(Object made in)</p>
+        <p class="title"><span>Date:</span> ${paint.date}</p>
       </div>
       </div>`;
     }
