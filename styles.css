@@ -1,0 +1,135 @@
+@import url(//db.onlinewebfonts.com/c/09167ab604ebbfb1e7b6328321baf783?family=Recoleta-Medium);
+
+@font-face {
+  font-family: "Gill Sans MT W01 Medium";
+  src: url(font/GillSansW01-Medium.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.3em;
+} */
+body {
+  background-color: #fbfacd;
+}
+
+.header {
+  text-align: center;
+  margin-top: 0.3em;
+  font-size: clamp(2.25rem, -2.125rem + 14vw, 5.75rem);
+  font-family: "Recoleta-Medium", sans-serif;
+  font-weight: 400;
+}
+
+.desclaimer {
+  margin-top: 1em;
+}
+
+.desclaimer p {
+  text-align: justify;
+  line-height: 28px;
+  font-family: "Gill Sans MT W01 Medium";
+  font-weight: 400;
+  font-size: clamp(1.225rem, 1.225rem + 0vw, 1.225rem);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+input:focus {
+  outline: none;
+}
+
+img {
+  width: 100%;
+  cursor: pointer;
+  border: 10px solid #121212;
+}
+
+form {
+  width: 100%;
+  margin: 2em auto 3em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#input {
+  width: 100%;
+  padding: 1rem;
+  max-width: 40rem;
+  font-size: 1rem;
+  border-radius: 0.3em;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  font-family: "Recoleta-Medium", sans-serif;
+}
+
+#submit {
+  border-radius: 0.3em;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  background-color: #fff;
+  padding: 1.1rem;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.error-header {
+  margin-bottom: 5px;
+}
+
+.suggestions {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-left: 1.3em;
+}
+
+.info:hover {
+  display: block;
+}
+
+.info .title {
+  font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+  font-family: "Gill Sans MT W01 Medium";
+  font-weight: 400;
+}
+
+.info .artist {
+  font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
+  font-weight: bold;
+  font-family: "Recoleta-Medium", sans-serif;
+}
+
+.info {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  opacity: 0;
+  transition: 0.5s;
+  background-color: #fbfacd;
+  color: #121212;
+  padding: 0.4em;
+  padding-top: 0.2em;
+  cursor: pointer;
+}
+
+.img-container:hover .info {
+  opacity: 1;
+  bottom: 10%;
+}

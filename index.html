@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- meta tags -->
+    <link rel="image_src" href="thumbnail.jpg" />
+    <meta
+      property="og:title"
+      content="Art Gallery - I don't know what to say"
+    />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="starry-night.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Art Gallery</h1>
+      <div class="desclaimer">
+        <p>
+          The data in this response is licensed under a Creative Commons Zero
+          (CC0) 1.0 designation and the Terms and Conditions of artic.edu. There
+          are only <strong>100</strong> paintings on this website, and since you
+          can only search among those paintings, any search for an image that is
+          not among those paintings will return no results. Hovering over an
+          artwork reveals the <strong>title</strong> and
+          <strong>artist</strong> . Enjoy!
+        </p>
+      </div>
+      <form action="">
+        <input type="text" name="search" placeholder="Search" id="input" />
+        <input type="submit" id="submit" value="🔍" />
+      </form>
+      <div class="grid"></div>
+    </div>
+
+    <!-- macy js -->
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+    <!-- script link -->
+    <script src="app.js"></script>
+  </body>
+</html>
