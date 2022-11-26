@@ -1,8 +1,11 @@
-@import url(//db.onlinewebfonts.com/c/09167ab604ebbfb1e7b6328321baf783?family=Recoleta-Medium);
-
 @font-face {
   font-family: "Gill Sans MT W01 Medium";
   src: url(font/GillSansW01-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Recoleta W00 Medium";
+  src: url(font/Recoleta-Medium.ttf);
 }
 
 * {
@@ -24,7 +27,7 @@ body {
   text-align: center;
   margin-top: 0.3em;
   font-size: clamp(2.25rem, -2.125rem + 14vw, 5.75rem);
-  font-family: "Recoleta-Medium", sans-serif;
+  font-family: "Recoleta W00 Medium";
   font-weight: 400;
 }
 
@@ -34,10 +37,9 @@ body {
 
 .desclaimer p {
   text-align: justify;
-  line-height: 28px;
   font-family: "Gill Sans MT W01 Medium";
-  font-weight: 400;
-  font-size: clamp(1.225rem, 1.225rem + 0vw, 1.225rem);
+  font-size: clamp(1rem, 0.9219rem + 0.25vw, 1.0625rem);
+  line-height: 1.4rem;
 }
 
 .container {
@@ -72,7 +74,7 @@ form {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
   outline: none;
   border: none;
-  font-family: "Recoleta-Medium", sans-serif;
+  font-family: "Recoleta W00 Medium";
 }
 
 #submit {
@@ -104,14 +106,14 @@ ul {
 
 .info .title {
   font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
-  font-family: "Gill Sans MT W01 Medium";
   font-weight: 400;
+  font-family: "Gill Sans MT W01 Medium";
 }
 
 .info .artist {
   font-size: clamp(0.875rem, 0.875rem + 0vw, 0.875rem);
   font-weight: bold;
-  font-family: "Recoleta-Medium", sans-serif;
+  font-family: "Recoleta W00 Medium";
 }
 
 .info {
