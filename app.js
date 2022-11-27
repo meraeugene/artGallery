@@ -49,7 +49,7 @@ const showImage = (array) => {
         <div class="info">
         <p class="title"><span>Artist:</span> ${paint.artist}</p>
         <p class="title"><span>Title:</span> ${paint.title}</p>
-        <p class="title"><span>Place:</span> ${paint.place}(Object made in)</p>
+        <p class="title"><span>Place:</span> ${paint.place} (Object made in)</p>
         <p class="title"><span>Date:</span> ${paint.date}</p>
       </div>
       </div>`;
