@@ -1,6 +1,4 @@
 const grid = document.querySelector(".grid");
-const searchBar = document.querySelector("#input");
-const searchBtn = document.querySelector("#submit");
 const configURL = "https://www.artic.edu/iiif/2";
 
 const macyInstance = Macy({
@@ -67,49 +65,3 @@ const fixStartupBug = () => {
   }, true);
 };
 
-const searchFunction = (array) => {
-  fixStartupBug();
-
-  const paintings = array.data;
-  //mapped into artist and title
-  users = paintings.map((paint) => {
-    return {
-      title: paint.title,
-      imageID: paint.image_id,
-      artist: paint.artist_title,
-    };
-  });
-
-  searchBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    fixStartupBug();
-    const query = searchBar.value.toLowerCase();
-
-    users.forEach((user) => {
-      const titleLowerCase = user.title.toLowerCase();
-      const title = user.title;
-      const artist = user.artist;
-      const paintImages = `${configURL}/${user.imageID}/full/1686,/0/default.jpg`;
-
-      if (query == titleLowerCase) {
-        grid.innerHTML = ` <div class="img-container">
-        <img src="${paintImages}" alt="" />
-      <div class="info">
-      <p class="title">${title}</p>
-      <p class="artist">${artist}</p>
-    </div>
-    </div>`;
-      }
-    });
-  });
-};
-
-const searchBarInput = (array) => {
-  searchBar.addEventListener("input", () => {
-    const value = searchBar.value;
-
-    if (!value) {
-      showImage(array);
-    }
-  });
-};
