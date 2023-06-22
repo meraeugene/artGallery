@@ -31,25 +31,13 @@ body {
   font-weight: 400;
 }
 
-.desclaimer {
-  margin-top: 1em;
-}
 
-.desclaimer p {
-  text-align: justify;
-  font-family: "Gill Sans MT W01 Medium";
-  font-size: clamp(1rem, 0.9219rem + 0.25vw, 1.0625rem);
-  line-height: 1.4rem;
-}
 
 .container {
   width: 90%;
   margin: 0 auto;
 }
 
-input:focus {
-  outline: none;
-}
 
 .grid img {
   width: 100%;
@@ -57,40 +45,6 @@ input:focus {
   border: 10px solid #121212;
 }
 
-form {
-  width: 100%;
-  margin: 2em auto 3em auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#input {
-  width: 100%;
-  padding: 1rem;
-  max-width: 40rem;
-  font-size: 1rem;
-  border-radius: 0.3em;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-  outline: none;
-  border: none;
-  font-family: "Recoleta W00 Medium";
-}
-
-#submit {
-  border-radius: 0.3em;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-  outline: none;
-  border: none;
-  background-color: #fff;
-  padding: 1.1rem;
-  margin-left: 15px;
-  cursor: pointer;
-}
-
-.error-header {
-  margin-bottom: 5px;
-}
 
 .suggestions {
   margin-bottom: 10px;
