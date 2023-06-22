@@ -29,6 +29,7 @@ body {
   font-size: clamp(2.25rem, -2.125rem + 14vw, 5.75rem);
   font-family: "Recoleta W00 Medium";
   font-weight: 400;
+  margin-bottom: 0.3em;
 }
 
 
